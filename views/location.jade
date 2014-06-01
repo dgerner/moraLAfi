@@ -1,0 +1,80 @@
+extends index
+block leftpane
+  h2 !{art.name}
+  .panel.panel-default
+  .row
+    .col-md-offset-1.col-xs-10
+      #media.carousel.slide.media-carousel
+        .carousel-inner.thumbnails
+          .item.active
+            .row
+              .col-md-4
+                a.thumbnail(href='#')
+                  img(alt='', title = 'test',src=art.image[0]||'')
+              .col-md-4
+                a.thumbnail(href='#')
+                  img(alt='', src=art.image[1]||'')
+              .col-md-4
+                a.thumbnail(href='#')
+                  img(alt='', src=art.image[2]||'')
+          .item
+            .row
+              .col-md-4
+                a.thumbnail(href='#')
+                  img(alt='', src=art.image[3]||'')
+              .col-md-4
+                a.thumbnail(href='#')
+                  img(alt='', src=art.image[4]||'')
+              .col-md-4
+                a.thumbnail(href='#')
+                  img(alt='', src=art.image[5]||'')
+          .item
+            .row
+              .col-md-4
+                a.thumbnail(href='#')
+                  img(alt='', src=art.image[6]||'')
+              .col-md-4
+                a.thumbnail(href='#')
+                  img(alt='', src=art.image[7]||'')
+              .col-md-4
+                a.thumbnail(href='#')
+                  img(alt='', src='')
+        a.left.carousel-control(data-slide='prev', href='#media') ‹
+        a.right.carousel-control(data-slide='next', href='#media') 
+  .panel.panel-default
+    .panel-heading Information
+  p
+    | !{art.description}
+  table.info-head
+    tbody
+        tr
+          td.pull-right
+            strong Status
+          td !{art.status}
+        tr
+          td.pull-right
+            strong !{art.startend}
+          td !{art.date}
+  br
+  .panel.panel-default
+    .panel-heading Comments
+  .panel-body
+    ul.list-group
+        -each val, index in art.comments
+          li.list-group-item 
+            .row
+              .col-xs-2.col-md-1
+                img.img-circle.img-responsive(src='http://placehold.it/80', alt='')
+              .col-xs-10.col-md-11
+                div
+                  a(href='#') !{val.user}
+                .comment-text
+                  | !{val.comment}
+        li.list-group-item
+          form.form-horizontal(role='form')
+            .form-group
+              label.col-sm-12(for='inputBody') Add Comment
+              .col-sm-12
+                textarea#inputBody.form-control(rows='6')
+                br
+                button.btn.btn-primary(type='button') Post  

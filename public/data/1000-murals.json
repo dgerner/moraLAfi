@@ -1,0 +1,95 @@
+[
+  {
+    "ObjectId": "0",
+    "image": ["https://www.omg.travel/content/streetart/image28.jpg", "http://3.bp.blogspot.com/-fVePJgdYJjE/Ta34dXQuCjI/AAAAAAAAAcU/zUOys9j8XbI/s1600/JR_scottrell_bristol_hotel-4-thumb-550x367.jpg"],
+    "description": "Recently completed mural for the Bristol Apartment Complex in Downtown LA",
+    "name": "Bristol Hotel",
+    "street": "W 8th St",
+    "city": "Los Angeles",
+    "zip": "90014",
+    "status": "Completed Mural",
+    "startend": "Completed",
+    "date": "10/14/2009",
+    "comments": [
+      {
+        "user": "anonymous",
+        "comment": "westside!"
+      },
+      {
+        "user": "some_dude",
+        "comment": "i love this!"
+      }
+    ],
+    "poster": "alexander",
+    "artists": [
+      {
+        "name": "JR"
+      }
+    ],
+    "owner": "unknown",
+    "lat": "33.540744",
+    "lng": "-117.782432"
+  },
+{
+  "ObjectId": "1",
+    "image": ["https://www.omg.travel/content/streetart/image30.jpg"],
+    "description": "Work by muralist Mario Aguirre Uriarte in the Boyle Heights area.",
+    "name": "500 Years of Indigenous Struggle",
+    "street": "3600 Whittier Blvd",
+    "city": "Los Angeles",
+    "zip": "90023",
+    "comments": [],
+    "poster": "usc",
+    "status": "Completed Mural",
+    "startend": "Completed",
+    "date": "1/1/1990",
+    "artists": [
+      {
+        "name": "Mario Aguirre Uriarte"
+      }
+    ],
+    "owner": "unknown",
+    "lat": "34.025612",
+    "lng": "-118.196105"
+  },
+    {
+    "ObjectId": "2",
+    "image": ["http://i.imgur.com/bEK1Raf.jpg", "http://i.imgur.com/OocQoSE.jpg", "http://i.imgur.com/8gDjxcY.jpg"],
+    "description": "Need help designing/painting 2-wall mural. Open to all ideas, especially interested in portraits. South-facing wall approx 40ft x 20ft, west-facing approx 70ft x 20ft.",
+    "name": "3431 E Cesar Chavez Ave",
+    "street": "3431 E Cesar Chavez Ave",
+    "city": "Los Angeles",
+    "zip": "90063",
+    "comments": [],
+    "poster": "usc",
+    "status": "Open",
+    "startend": "Start by",
+    "date": "6/1/2014",
+    "artists": [
+    
+    ],
+    "owner": "unknown",
+    "lat": "34.041123",
+    "lng": "-118.191405"
+  },
+    {
+    "ObjectId": "3",
+    "image": ["http://i.imgur.com/wyEOBbY.jpg", "http://i.imgur.com/wAXXtMG.jpg", "http://i.imgur.com/BRZmxHI.jpg"],
+    "description": "Looking for artist to paint a small, storefront area.",
+    "name": "5812 Pico Blvd",
+    "street": "5812 Pico Blvd",
+    "city": "Los Angeles",
+    "zip": "90019",
+    "comments": [],
+    "poster": "barton",
+    "status": "Open",
+    "startend": "6/21/2014",
+    "date": "6/1/2014",
+    "artists": [
+    
+    ],
+    "owner": "unknown",
+    "lat": "34.051153",
+    "lng": "-118.364939"
+  }
+]

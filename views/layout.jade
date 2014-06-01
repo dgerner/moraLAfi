@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.js')
+    script(src='http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js')
+    link(rel='stylesheet', href='http://js.arcgis.com/3.9/js/dojo/dijit/themes/tundra/tundra.css')
+    link(rel='stylesheet', href='http://js.arcgis.com/3.9/js/esri/css/esri.css')
+    style.
+      /* center the image in the popup */
+      .esriViewPopup .gallery { margin: 0 auto !important; }
+    script.
+      var dojoConfig = { 
+        paths: {
+          extras: "/extras"
+        }
+      };
+    script(type='text/javascript', src='http://js.arcgis.com/3.9/')
+    script(type='text/javascript',src='/javascripts/map.js')
+  body
+    block content
+    #myModal.modal.fade(tabindex='-1', role='dialog')
+    .modal-dialog
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal') ×
+          h3.modal-title Heading
+        .modal-body
+        .modal-footer
+          button.btn.btn-default(data-dismiss='modal') Close
+    script.
+      $('.thumbnail').click(function(){
+        $('.modal-body').empty();
+        var title = $(this).parent('a').attr("title");
+        $('.modal-title').html(title);
+        $($(this).parents('div').html()).appendTo('.modal-body');
+        $('#myModal').modal({show:true});
+      });

@@ -1,0 +1,70 @@
+extends index
+block leftpane
+  .row
+    .col-md-2
+      img(src='http://placehold.it/150x150' style="width: 70px;height:70px;")
+    .col-md-10
+      h3 Dave Gerner
+  br
+  .panel.panel-default
+    .panel-heading Information
+  p
+    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
+    | Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
+    | dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
+    | Aliquam in felis sit amet augue.
+  table.info-head
+    tbody
+        tr
+          td.pull-right
+            strong Projects
+          td !{profile.projects}
+        tr
+          td.pull-right
+            strong Instagram
+          td
+            a(href='https://www.instagram.com/'+profile.instagram) @!{profile.instagram}
+  br
+  .panel.panel-default
+    .panel-heading Previous Work
+  .row
+    .col-md-offset-1.col-xs-10
+      #media.carousel.slide.media-carousel
+        .carousel-inner
+          .item.active
+            .row
+              .col-md-4
+                a.thumbnail(href='#')
+                  img(alt='', src=profile.images[0]||'')
+              .col-md-4
+                a.thumbnail(href='#')
+                  img(alt='', src=profile.images[1]||'')
+              .col-md-4
+                a.thumbnail(href='#')
+                  img(alt='', src=profile.images[2]||'')
+          .item
+            .row
+              .col-md-4
+                a.thumbnail(href='#')
+                  img(alt='', src=profile.images[3]||'')
+              .col-md-4
+                a.thumbnail(href='#')
+                  img(alt='', src=profile.images[4]||'')
+              .col-md-4
+                a.thumbnail(href='#')
+                  img(alt='', src=profile.images[5]||'')
+          .item
+            .row
+              .col-md-4
+                a.thumbnail(href='#')
+                  img(alt='', src=profile.images[6]||'')
+              .col-md-4
+                a.thumbnail(href='#')
+                  img(alt='', src=profile.images[7]||'')
+              .col-md-4
+                a.thumbnail(href='#')
+                  img(alt='', src='')
+        a.left.carousel-control(data-slide='prev', href='#media') ‹
+        a.right.carousel-control(data-slide='next', href='#media') 
+        a.left.carousel-control(data-slide='prev', href='#media') ‹
+        a.right.carousel-control(data-slide='next', href='#media') 
